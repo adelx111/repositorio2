@@ -1,0 +1,189 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario & Adel | Developers</title>
+
+  <style>
+    :root {
+      --fondo: #0d0d0d;
+      --texto: #f5f5f5;
+      --secundario: #a0a0a0;
+      --acento: #7c5cff;
+      --borde: #242424;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      border-bottom: 1px solid var(--borde);
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: var(--secundario);
+      text-decoration: none;
+      margin-left: 24px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--texto);
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 8%;
+    }
+
+    .hero span {
+      color: var(--acento);
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      max-width: 700px;
+      font-size: clamp(2.8rem, 8vw, 6rem);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 520px;
+      color: var(--secundario);
+      font-size: 1.1rem;
+    }
+
+    .boton {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 32px;
+      padding: 12px 22px;
+      color: white;
+      background: var(--acento);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .boton:hover {
+      transform: translateY(-3px);
+      opacity: 0.85;
+    }
+
+    section {
+      padding: 80px 8%;
+      border-top: 1px solid var(--borde);
+    }
+
+    h2 {
+      margin-bottom: 32px;
+      font-size: 2rem;
+    }
+
+    .equipo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta {
+      padding: 28px;
+      border: 1px solid var(--borde);
+      border-radius: 10px;
+      background: #121212;
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 8px;
+    }
+
+    .tarjeta p {
+      color: var(--secundario);
+    }
+
+    footer {
+      padding: 24px 8%;
+      color: var(--secundario);
+      text-align: center;
+      border-top: 1px solid var(--borde);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">M&A / DEV</div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <span>DESARROLLO DIGITAL</span>
+      <h1>Construimos ideas simples y potentes.</h1>
+      <p>
+        Somos Mario y Adel, desarrolladores enfocados en crear experiencias
+        digitales modernas, rápidas y minimalistas.
+      </p>
+      <a class="boton" href="#equipo">Conoce al equipo</a>
+    </section>
+
+    <section id="equipo">
+      <h2>Nuestro equipo</h2>
+
+      <div class="equipo">
+        <article class="tarjeta">
+          <h3>Mario</h3>
+          <p>Desarrollador frontend especializado en interfaces limpias y funcionales.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Adel</h3>
+          <p>Desarrollador creativo enfocado en soluciones digitales y experiencia de usuario.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>¿Tienes un proyecto?</h2>
+      <p>Hablemos sobre cómo podemos convertir tu idea en una experiencia digital.</p>
+      <a class="boton" href="mailto:hola@marcadel.dev">Contactar</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Mario & Adel. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
+```
